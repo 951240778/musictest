@@ -1,0 +1,55 @@
+{
+  "app": {
+    "signingConfigs": [
+      {
+        "name": "default",
+        "type": "HarmonyOS",
+        "material": {
+          "certpath": "C:\\Users\\Administrator\\.ohos\\config\\default_harmony-os-music-master_bJzr3OXONz5s-OcnXPK5-y9GUr15Df-h49wbnOPqVTw=.cer",
+          "keyAlias": "debugKey",
+          "keyPassword": "0000001B4AEC6BD3EA1C0A30F52353EC70CD56358A79300B6FA9AED116BC1EE46B2E830D1CDBDC3089EE9D",
+          "profile": "C:\\Users\\Administrator\\.ohos\\config\\default_harmony-os-music-master_bJzr3OXONz5s-OcnXPK5-y9GUr15Df-h49wbnOPqVTw=.p7b",
+          "signAlg": "SHA256withECDSA",
+          "storeFile": "C:\\Users\\Administrator\\.ohos\\config\\default_harmony-os-music-master_bJzr3OXONz5s-OcnXPK5-y9GUr15Df-h49wbnOPqVTw=.p12",
+          "storePassword": "0000001B6D50BB417CE4DB587BE85A66C73B6F1B55D99B8D78BF5492AD233C8444FA7296E286C8749973A0"
+        }
+      }
+    ],
+    "products": [
+      {
+        "name": "default",
+        "signingConfig": "default",
+        "compatibleSdkVersion": "5.0.0(12)",
+        "runtimeOS": "HarmonyOS",
+        "buildOption": {
+          "strictMode": {
+            "caseSensitiveCheck": true,
+            "useNormalizedOHMUrl": true
+          }
+        }
+      }
+    ],
+    "buildModeSet": [
+      {
+        "name": "debug",
+      },
+      {
+        "name": "release"
+      }
+    ]
+  },
+  "modules": [
+    {
+      "name": "entry",
+      "srcPath": "./entry",
+      "targets": [
+        {
+          "name": "default",
+          "applyToProducts": [
+            "default"
+          ]
+        }
+      ]
+    }
+  ]
+}
